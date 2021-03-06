@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    height: 100vh;
+    width: 100%;
+}
