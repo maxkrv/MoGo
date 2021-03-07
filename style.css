@@ -15,6 +15,10 @@ body {
     line-height: 1.6;
 }
 
+p {
+    margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -163,4 +167,17 @@ h6 {
 .btn:hover {
     color: #333;
     background-color: #fff;
+}
+
+/* section */
+.section {
+    padding: 80px 0;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+
+    text-align: center;
 }
