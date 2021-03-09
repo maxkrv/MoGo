@@ -176,7 +176,7 @@ h6 {
 .section__header {
     width: 100%;
     max-width: 950px;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
 
     text-align: center;
 }
@@ -298,4 +298,68 @@ h6 {
 .stats__text {
     font-size: 14px;
     text-transform: uppercase;
+}
+
+/* services */
+.services {
+    display: flex;
+}
+
+hr {
+    margin: 55px 0;
+    height: 1px;
+
+    background-color: #e5e5e5;
+    border: none;
+}
+
+.services__item {
+    flex: 1 1 0;
+    padding: 0 35px 0 80px;
+    position: relative;
+}
+
+.services__icon {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    z-index: 1;
+}
+
+.services__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services__text {
+    color: #999;
+    font-family: Roboto;
+}
+
+/* devices */
+.section-devices {
+    padding-bottom: 0;
+
+    background: url(img/devices/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item {
+    display: block;
+}
+
+.devices__item-iphone {
+    position: absolute;
+    bottom: -90px;
+    right: 0;
 }
