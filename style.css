@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap");
 
 *,
 *:before,
@@ -9,7 +9,7 @@
 body {
     margin: 0;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     color: #333;
     line-height: 1.6;
@@ -106,7 +106,7 @@ h6 {
     height: 100vh;
     width: 100%;
 
-    background: linear-gradient(#f38181,#fce38a);
+    background: linear-gradient(#f38181, #fce38a);
 }
 
 .intro__inner {
@@ -121,7 +121,7 @@ h6 {
     margin-bottom: 20px;
     font-size: 73px;
     color: #fff;
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
     font-style: italic;
 }
 
@@ -182,8 +182,9 @@ h6 {
 }
 
 .section__suptitle {
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
     font-size: 24px;
+    font-weight: 400;
 }
 
 .section__title {
@@ -226,7 +227,7 @@ h6 {
 }
 
 .about__item:hover .about__img img {
- opacity: 0.1;
+    opacity: 0.1;
 }
 
 .about__item:hover .about__text {
@@ -341,6 +342,7 @@ hr {
 
 /* devices */
 .section-devices {
+    margin-bottom: 40px;
     padding-bottom: 0;
 
     background: url(img/devices/bg.jpg) center no-repeat;
@@ -362,4 +364,127 @@ hr {
     position: absolute;
     bottom: -90px;
     right: 0;
+}
+
+/* service-info */
+.service-info {
+    display: flex;
+}
+
+.service-info__item {
+    width: 50%;
+}
+
+/* accordion */
+.accordion__item {
+    margin-bottom: 15px;
+
+    border: 1px solid #e5e5e5;
+}
+
+.accordion__item.active .accordion__content {
+    display: block;
+}
+
+.accordion__item.active .accordion__header:after {
+    transform: rotate(-45deg);
+}
+
+.accordion__item.active .accordion__header {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion__header {
+    padding: 15px 20px 15px 65px;
+    position: relative;
+
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.accordion__header:after {
+    content: " ";
+    display: block;
+    height: 16px;
+    width: 16px;
+
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+
+    transform: translateY(-50%);
+}
+
+.accordion__title {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.accordion__content {
+    display: none;
+    padding: 20px 15px;
+
+    font-family: Roboto;
+    font-style: italic;
+    color: #999;
+}
+
+/* section reviews */
+
+.section-gray {
+    background-color: #f8f8f8;
+}
+
+.reviews {
+    padding: 0 110px;
+}
+
+.reviews__item {
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__text {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+.reviews__author {
+    font-family: 'kaushan script';
+    font-size: 24px;
+}
+
+.reviews__author:before {
+    content: " ";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+
+    background-color: #f38181;
 }
