@@ -554,6 +554,10 @@ hr {
 }
 
 /* works */
+.section-works {
+    padding-bottom: 0;
+}
+
 .works {
     display: flex;
 }
