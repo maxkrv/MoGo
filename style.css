@@ -896,6 +896,14 @@ hr {
     color: #f38181;
 }
 
+.footer__title {
+    margin: 30px 0;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 /* subscribe */
 .subscribe {
     width: 100%;
@@ -951,4 +959,17 @@ hr {
 
 .subscribe__btn:hover {
     background-color: #f38181;
+}
+
+.footer__blog {
+
+}
+
+.footer__blog-item {
+    display: flex;
+
+}
+
+.footer__blog-img {
+    display: block;
 }
