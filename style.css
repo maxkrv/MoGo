@@ -20,6 +20,11 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
+
 h1,
 h2,
 h3,
@@ -70,7 +75,6 @@ h6 {
 
     position: relative;
 
-    text-decoration: none;
     color: #fff;
 
     transition: 0.3s;
@@ -160,7 +164,6 @@ h6 {
     font-family: inherit;
     font-size: 14px;
     font-weight: 700;
-    text-decoration: none;
 
     transition: 0.3s;
 }
@@ -338,6 +341,7 @@ hr {
     font-size: 14px;
     color: #333;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .services__text {
@@ -435,6 +439,7 @@ hr {
 .accordion__title {
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .accordion__content {
@@ -510,7 +515,7 @@ hr {
     background-color: #fce38a;
     border-right: 1px solid #f38181;
 
-    text-decoration: none;
+    
     color: #f38181;
     font-size: 30px;
     line-height: 1;
@@ -538,6 +543,7 @@ hr {
 
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .cards__job {
@@ -658,7 +664,7 @@ hr {
 .clients__name {
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .clients__job {
@@ -680,4 +686,144 @@ hr {
     font-family: Roboto;
     color: #999;
     font-weight: 400;
+}
+
+/* blog */
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__item {
+    width: 33%;
+}
+
+.blog__header {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.blog__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog__date {
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: 1;
+
+    background-color: #95e1d3;
+   
+    color: #fff;
+}
+
+.blog__date-day {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.blog__date-mounth {
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.blog__content {
+    margin-bottom: 10px;
+}
+
+.blog__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.blog__title a {
+    color: inherit;
+    
+}
+
+.blog__text {
+    font-family: Roboto;
+    font-style: italic;
+    color: #999999;
+}
+
+.blog__footer {
+    padding-top: 14px;
+
+    border-top: 1px solid #e5e5e5;
+
+    color: #999;
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.blog__footer-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.blog__footer-item i {
+    color: #95e1d3;
+}
+
+/* map */
+.section-map {
+    padding: 60px 0;
+
+    background: url(img/map/map-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.map {
+    text-align: center;
+}
+
+.map__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F38181;
+    text-transform: uppercase;
+}
+
+
+.map__title:after {
+    content: " ";
+    margin: 13px auto 0;
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #f38181;
+}
+
+/* footer */
+.footer {
+    padding: 65px;
+
+    background-color: #f8f8f8;
+}
+
+.footer__logo {
+    margin-bottom: 30px;
+
+    color: #ccc;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer__text {
+    margin-bottom: 30px;
+    color: #999;
+    font-family: Roboto;
 }
