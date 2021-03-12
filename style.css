@@ -37,7 +37,8 @@ h6 {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -217,13 +218,15 @@ h6 {
 
 /* cards */
 .cards {
-    margin-top: 80px;
+    margin-top: 80px -15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .cards__item {
-    width: 380px;
+    width: 33.333%;
+    padding: 0 15px;
 }
 
 .cards__inner {
@@ -252,6 +255,8 @@ h6 {
 
 .cards__img img {
     display: block;
+    max-width: 100%;
+    height: auto;
 
     transition: 0.3s;
 }
@@ -282,6 +287,7 @@ h6 {
 
 .stats__inner {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stats__item {
@@ -1026,4 +1032,118 @@ hr {
 
 .copyright span {
     color: #f38181;
+}
+
+/* media */
+@media (max-width: 1230) {
+    /* intro */
+    .intro__suptitle {
+        font-size: 52px;
+    }
+
+    .intro__title {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 990px) {
+    /* intro */
+    .intro__suptitle {
+        font-size: 32px;
+    }
+
+    .intro__title {
+        font-size: 80px;
+    }
+
+    /* stat */
+    .stats__inner {
+        justify-content: center;
+    }
+
+    .stats__item {
+        flex: none;
+        width: 33.333%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        border: none;
+    }
+
+    .stats__item:first-child {
+        border-left: none;
+    }
+}
+
+@media (max-width: 770px) {
+    /* nav */
+    .nav {
+        display: none;
+
+        opacity: 0;
+    }
+
+    /* section */
+    .section {
+        padding: 40px;
+    }
+
+    /* cards */
+    .cards {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .cards__item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+
+    .cards__item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    /* Intro */
+    .intro__suptitle {
+        font-size: 22px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+    /* section */
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+    
+    .section__suptitle {
+        font-size: 20px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+    
+    /* stats */
+    .stats__item {
+        width: 100%;
+
+        border-bottom: 1px solid #b5eae0;
+    }
+
+    .stats__item:last-child {
+        border-bottom: none;
+    }
+
+    .stats__num {
+        font-size: 52px;
+    }
 }
