@@ -320,20 +320,18 @@ h6 {
 /* services */
 .services {
     display: flex;
-}
-
-hr {
-    margin: 55px 0;
-    height: 1px;
-
-    background-color: #e5e5e5;
-    border: none;
+    flex-wrap: wrap;
 }
 
 .services__item {
-    flex: 1 1 0;
-    padding: 0 35px 0 80px;
+    width: 33%;
+    margin-bottom: 30px;
+    padding: 0 35px 30px 80px;
     position: relative;
+}
+
+.services__item-bottom {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -374,6 +372,8 @@ hr {
 
 .devices__item {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices__item-iphone {
@@ -385,10 +385,19 @@ hr {
 /* service-info */
 .service-info {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .service-info__item {
     width: 50%;
+    padding: 0 15px;
+}
+
+.service-info__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* accordion */
@@ -1073,6 +1082,16 @@ hr {
     .stats__item:first-child {
         border-left: none;
     }
+
+    /* services */
+    .services__item {
+        width: 50%;
+        padding-bottom: none;
+    }
+
+    .services__item-bottom {
+        border-bottom: none;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1086,6 +1105,10 @@ hr {
     /* section */
     .section {
         padding: 40px;
+    }
+
+    .section-devices {
+        padding-bottom: 0;
     }
 
     /* cards */
@@ -1102,6 +1125,20 @@ hr {
 
     .cards__item:last-child {
         margin-bottom: 0;
+    }
+
+    /* services */
+    .services__item {
+        width: 100%;
+    }
+
+    /* servics-info */
+    .service-info__img {
+        display: none;
+    }
+
+    .service-info__item {
+        width: 100%;
     }
 }
 
@@ -1145,5 +1182,27 @@ hr {
 
     .stats__num {
         font-size: 52px;
+    }
+
+    /* services */
+    .services__item {
+        width: 100%;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .services__icon {
+        left: 0;
+    }
+
+    /* devices */
+    .devices {
+        max-width: 320px;
+    }
+
+    .devices__item-iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
     }
 }
