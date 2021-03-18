@@ -14,10 +14,9 @@ $(function() {
 
     checkScroll();
 
-    $(window).on("scroll resize", function() {
+    $(window).on("scroll", function() {
         scrollPos = $(this).scrollTop();      
         checkScroll();
-        $("#nav").removeClass("active");
     });
 
     // scroll
@@ -26,6 +25,9 @@ $(function() {
 
         let elementID = $(this).data("scroll");
         let elementOffset = $(elementID).offset().top;
+
+        $("#burger").removeClass("active");
+        $("#nav").removeClass("active");
 
         $("html, body").animate({
             scrollTop: elementOffset - 50
