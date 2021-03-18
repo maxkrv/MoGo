@@ -42,4 +42,15 @@ $(function() {
     });
 
     // accordion
+    $("#accordion__item").on("click", function() {
+        $(this).toggleClass("active");
+    });
+
+    $("#accordion__item1").on("click", function() {
+        $(this).toggleClass("active");
+    });
+
+    $("#accordion__item2").on("click", function() {
+        $(this).toggleClass("active");
+    });
 });
