@@ -18,7 +18,6 @@ $(function() {
         scrollPos = $(this).scrollTop();      
         checkScroll();
         $("#nav").removeClass("active");
-        $("#burger").removeClass("active")
     });
 
     // scroll
