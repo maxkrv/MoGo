@@ -16,7 +16,6 @@ $(function() {
 
     $(window).on("scroll", function() {
         scrollPos = $(this).scrollTop();   
-        $("#nav").removeClass("active");   
         checkScroll();
     });
 
